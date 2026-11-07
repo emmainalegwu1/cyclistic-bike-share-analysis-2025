@@ -7,7 +7,9 @@
 
 -- Objective:
 -- Create one reusable cleaned view for all 2025 analysis.
--- Cleaning rule: retain rides above 0 second.
+-- Cleaning rule: 
+-- removing records that belong to the other month to thier ppropriate months
+-- retain rides above 0 second.
 -- Transformed the data with the icnlusion of ride length in seconds and minutes, month and month number
 -- day of week and day number.
 
