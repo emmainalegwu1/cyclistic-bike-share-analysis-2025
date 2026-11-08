@@ -19,8 +19,5 @@ SELECT
   COUNT(ride_id) AS trip_count,
   ROUND(AVG(ride_length_seconds) / 60.0, 2) AS mean_ride_len
 FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_cleaned_trips`
-GROUP BY month, month_num, user_type;
-
-SELECT *
-FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_month_trip_summary`
+GROUP BY month, month_num, user_type
 ORDER BY month_num, user_type;
