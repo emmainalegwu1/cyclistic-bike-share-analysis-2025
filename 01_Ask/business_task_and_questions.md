@@ -12,33 +12,33 @@ Analyse 2025 bike-share trip data to identify differences in usage patterns betw
 
 ##  Key Stakeholders
 
-The director of marketing. 
-A team of data analysts.
-The executive team.
+- The director of marketing. 
+- A team of data analysts.
+- The executive team.
 
 ## Key Business Questions
 
-How do annual trip counts compare between casual riders and members?
+- How do annual trip counts compare between casual riders and members?
 
-How does average ride duration differ between the two rider groups?
+- How does average ride duration differ between the two rider groups?
 
-Which months have the highest and lowest trip volumes for each group?
+- Which months have the highest and lowest trip volumes for each group?
 
-How does riding behaviour differ by day of the week?
+- How does riding behaviour differ by day of the week?
 
-How does usage vary across the four seasons?
+- How does usage vary across the four seasons?
 
-What patterns could inform strategies to convert casual riders into annual members?
+- What patterns could inform strategies to convert casual riders into annual members?
 
 ## Scope of Analysis
 
-Period: January–December 2025.
+- Period: January–December 2025.
 
-Rider categories: Casual riders and annual members.
+- Rider categories: Casual riders and annual members.
 
-Key measures: Trip count and average ride duration.
+- Key measures: Trip count and average ride duration.
 
-Analysis dimensions: Monthly, weekday and seasonal behaviour.
+- Analysis dimensions: Monthly, weekday and seasonal behaviour.
 
 ## Expected Outcome
 
