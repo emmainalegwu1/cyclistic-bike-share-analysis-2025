@@ -1,4 +1,6 @@
 -- 03: PROCESS – DATA VALIDATION
+
+-- Objective:
 -- January - December 2025 source data validation
 
 -- Objective:
