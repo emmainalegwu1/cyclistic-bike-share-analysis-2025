@@ -10,7 +10,7 @@ This project uses 12 monthly Divvy bike-share trip-data files covering January t
 
 - Number of datasets: 12 monthly datasets.
 
-- Download source: (https://divvy-tripdata.s3.amazonaws.com/index.html)
+- Download source: https://divvy-tripdata.s3.amazonaws.com/index.html
 
 - License source: By Motivate International Inc. https://divvybikes.com/data-license-agreement
 
