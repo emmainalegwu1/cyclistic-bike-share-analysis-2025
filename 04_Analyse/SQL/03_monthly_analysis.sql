@@ -1,1 +1,3 @@
-
+-- 04: ANALYSE – MONTHLY RIDER BEHAVIOUR
+-- Compare monthly trip counts and mean ride duration
+-- between casual riders and annual members.
