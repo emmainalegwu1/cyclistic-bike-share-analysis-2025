@@ -21,12 +21,14 @@
 -- Transformed the data with the icnlusion of ride length in seconds and minutes, month and month number, day of week and day number.
 
 -- Removed 53 record of December 2024 from January 2025 data
+
 SELECT * FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_01_divvy_tripdata`
 WHERE 
   EXTRACT(YEAR FROM  started_at) = 2024
   AND EXTRACT(MONTH FROM started_at) = 12
 
 -- Creating table after moving records from sebsequent month belonging to previous months to their appropriate months.
+  
 CREATE TABLE `my-project-52671-510211.Cyclistic_bikeshare.2025_cleaned_trips` AS
  WITH all_trips AS 
 (
