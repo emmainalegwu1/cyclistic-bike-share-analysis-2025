@@ -1,6 +1,4 @@
--- =========================================
 -- 03: PROCESS – DATA CLEANING
--- =========================================
 
 -- Objective:
 -- This inlvolves creating a reusable cleaned dataset for the 2025 Cyclistic analysis.
