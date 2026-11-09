@@ -36,7 +36,7 @@ The following findings will be documented after validating the final results:
 
 - Visualisation Tool: Tableau Public
 
-- Dashboard URL: [Insert published Tableau dashboard link]
+- Dashboard URL: [https://public.tableau.com/views/CyclisticBikeshareCasestudyViz/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
 
 - Dashboard Title: [Insert dashboard title]
 
