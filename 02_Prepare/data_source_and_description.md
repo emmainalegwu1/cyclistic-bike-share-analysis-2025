@@ -10,17 +10,19 @@ This project uses 12 monthly Divvy bike-share trip-data files covering January t
 
 - Number of datasets: 12 monthly datasets.
 
-- Download source: [Insert official Divvy data source URL]
+- Download source: [(https://divvy-tripdata.s3.amazonaws.com/index.html)]
+
+- License source: By Motivate International Inc. [https://divvybikes.com/data-license-agreement] 
 
 ## Data Storage
 
-The datasets were imported into Google BigQuery for preparation and analysis.
+The datasets were imported into Google BigQuery via Google Connected Sheets for preparation and analysis.
 
-Project ID: my-project-52671-510211
+- Project ID: my-project-52671-510211
 
-Dataset: Cyclistic_bikeshare
+- Dataset: Cyclistic_bikeshare
 
-Source tables: 2025_01_divvy_tripdata through 2025_12_divvy_tripdata
+- Source tables: 2025_01_divvy_tripdata through 2025_12_divvy_tripdata
 
 ## Relevant Data Fields
 
