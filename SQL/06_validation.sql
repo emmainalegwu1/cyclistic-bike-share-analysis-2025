@@ -26,6 +26,7 @@ SELECT
 FROM monthly CROSS JOIN weekday CROSS JOIN seasonal;
 
 -- Comparing totals by rider type across the three summaries.
+
 SELECT 'Monthly' AS summary_type, user_type, SUM(trip_count) AS trip_count
 FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_month_trip_summary` GROUP BY user_type
 UNION ALL
