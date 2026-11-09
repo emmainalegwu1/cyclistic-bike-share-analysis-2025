@@ -5,6 +5,7 @@
 -- Compare trip counts and average ride duration
 -- between casual riders and members across four seasons.
 
+CREATE TABLE `my-project-52671-510211.Cyclistic_bikeshare.2025_seasonal_summary` AS
 SELECT
   CASE
     WHEN EXTRACT(MONTH FROM DATE(started_at)) IN (12, 1, 2)
