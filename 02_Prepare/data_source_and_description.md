@@ -24,7 +24,7 @@ Source tables: 2025_01_divvy_tripdata through 2025_12_divvy_tripdata
 
 ## Relevant Data Fields
 
-|Field |Description |
+| Field | Description |
 |---|---|
 | ride_id | Unique identifier for each trip |
 | rideable_type | Type of bicycle used |
