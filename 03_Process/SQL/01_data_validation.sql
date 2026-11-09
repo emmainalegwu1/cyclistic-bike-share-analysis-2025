@@ -1,7 +1,5 @@
--- =============================================
 -- 03: PROCESS – DATA VALIDATION
 -- January - December 2025 source data validation
--- =============================================
 
 -- Objective:
 -- Checking monthly row count, for duplicate ride_ids, null fields, non-positive durations, non-eleigible and eligible trips
