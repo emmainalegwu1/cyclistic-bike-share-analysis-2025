@@ -2,15 +2,13 @@
 
 ## Project Overview
 
-This project analyses 2025 Cyclistic bike-share data to understand how annual members and casual riders use the bike-sharing service differently.
+This project analyses 12 months of Cyclistic bike-share data to identify differences in how annual members and casual riders use the company's bike-sharing services.
 
-The objective is to identify usage patterns and provide data-driven recommendations that could help Cyclistic convert casual riders into annual members.
+The objective is to generate actionable insights that can help Cyclistic improve customer engagement, optimise operations and convert casual riders into annual members.
 
-## Business Task
+## Business Problem
 
-Cyclistic aims to increase annual memberships by understanding the differences in riding behaviour between casual riders and existing members.
-
-This analysis explores trip frequency, ride duration, monthly trends, weekday patterns and seasonal usage.
+Cyclistic wants to understand how annual members and casual riders use its bike-sharing services differently and how these insights can inform targeted marketing strategies.
 
 ## Key Business Questions
 
@@ -21,56 +19,59 @@ This analysis explores trip frequency, ride duration, monthly trends, weekday pa
 5. How does seasonal demand differ between casual riders and members?
 6. How can these insights support membership conversion strategies?
 
-## Data Source
+## Tools and Technologies
 
-The analysis uses Cyclistic's 2025 bike-share trip data, organised into monthly datasets from January to December 2025.
-
-The dataset includes trip identifiers, bike types, start and end timestamps, station information and rider categories.
-
-## Tools Used
-
-- **Google BigQuery (SQL):** Data validation, cleaning, transformation and analysis.
-- **Tableau Public:** Data visualisation and dashboard development.
+- **Google BigQuery (SQL):** Data cleaning, transformation and analysis.
+- **Tableau Public:** Interactive dashboards and data visualisation.
+- **Google Sheet and Google Connected Sheets:** Supporting data preparation and review.
 - **GitHub:** Project documentation, SQL scripts and portfolio presentation.
-
-## Data Processing
-
-The analysis applies a consistent data-cleaning rule across all 12 months.
-
-Records are retained only when the trip identifier, rider category and timestamps are present, and the trip duration exceeds 0 second.
 
 ## Analysis Performed
 
-- Monthly trip volume and mean ride duration.
-- Weekday trip volume and mean ride duration.
+- Monthly trip volume by rider type.
+- Weekday trip patterns.
 - Seasonal riding patterns.
-- Comparison of casual riders and annual members.
-- Final data validation and reconciliation.
+- Average ride duration by month.
+- Average ride duration by weekday.
+- Average ride duration by season.
 
-## Project Structure
+## Key Findings
 
-- `01_Ask` – Business task and analytical questions.
-- `02_Prepare` – Data source and description.
-- `03_Process` – Data validation and cleaning SQL.
-- `04_Analyse` – Monthly, weekday and seasonal analysis SQL.
-- `05_Share` – Dashboard documentation and findings.
-- `06_Act` – Business recommendations.
+- August recorded the highest monthly trip volume for both rider categories.
+- Thursday was the busiest weekday for members, while Saturday was the busiest for casual riders.
+- Summer recorded the highest seasonal trip volume for both groups.
+- Casual riders recorded longer average ride durations than members.
 
-## Deliverables
+## Key Performance Indicators
 
-- SQL scripts for data validation, cleaning and analysis.
-- Tableau Public dashboard.
-- Key analytical findings.
-- Business recommendations for membership growth.
+| Metric | Result |
+|---|---:|
+| Total Trips | 5,551,104 |
+| Member Trips | 3,552,447 |
+| Casual Trips | 1,998,657 |
+| Member Share | 63.99% |
+| Casual Share | 36.01% |
 
-## Dashboard
+## Interactive Dashboard
 
-**Tableau Public Link:** To be added after publication.
+**Tableau Public:** [View Cyclistic 2025 Dashboard](https://public.tableau.com/views/CyclisticBike-ShareAnalysis2025_17943367132840/CyclisticBike-ShareAnalysis-2025?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-## Project Status
+## Business Recommendations
 
-The project documentation and initial SQL scripts have been organised in GitHub. Final analytical results and dashboard publication will be updated after the SQL queries have been fully executed and validated.
+- Introduce targeted weekend membership promotions to encourage casual riders to become annual members.
+- Strengthen member engagement through weekday-focused retention initiatives.
+- Increase operational readiness during summer to accommodate higher demand.
+- Develop leisure-focused campaigns to encourage repeat casual rider usage.
+
+## Repository Structure
+
+- `01_Ask/` – Business task and analytical questions.
+- `02_Prepare/` – Data sources and descriptions.
+- `03_Process/SQL/` – Data validation and cleaning scripts.
+- `04_Analyse/SQL/` – SQL analysis and validation scripts.
+- `05_Share/` – Dashboard documentation and findings.
+- `06_Act/` – Business recommendations.
 
 ## Conclusion
 
-This project demonstrates the use of SQL and data visualisation to investigate customer behaviour, identify business opportunities and support data-driven decision-making.
+This project demonstrates the use of SQL and data visualisation to analyse customer behaviour, identify usage patterns and develop data-driven business recommendations.
