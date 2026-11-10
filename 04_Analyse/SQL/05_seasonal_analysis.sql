@@ -29,7 +29,7 @@ SELECT
       THEN 4
   END AS season_num,
 
-  member_casual AS user_type,
+  user_type,
   COUNT(ride_id) AS trip_count,
 
   ROUND(
