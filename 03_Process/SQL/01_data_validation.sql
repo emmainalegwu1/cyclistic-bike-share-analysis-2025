@@ -230,3 +230,15 @@ SELECT
 FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_12_divvy_tripdata`
 ORDER BY month_num;
 
+-- Validate the final cleaned 2025 dataset
+
+SELECT
+  COUNT(*) AS total_cleaned_trips,
+  COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(*) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
+  COUNTIF(ride_length_seconds <= 0) AS invalid_durations,
+  COUNTIF(ride_length_seconds > 0) AS valid_trips,
+  MIN(ride_length_seconds) AS shortest_trip_seconds,
+  MAX(ride_length_seconds) AS longest_trip_seconds,
+  AVG(ride_length_seconds) AS average_ride_length_seconds
+FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_cleaned_trips`;
