@@ -6,18 +6,23 @@ Using insights from the 2025 Cyclistic bike-share analysis to identify opportuni
 
 ## Proposed Business Recommendations
 
-### 1. Targeted Membership Campaigns
+### 1. Convert Casual Riders into Annual Members
+Casual riders recorded longer average ride durations and higher trip volumes on Saturdays, suggesting a stronger recreational usage pattern.
 
-The marketing team should develop targeted membership campaigns for casual riders, with emphasis on the potential convenience and value of annual membership.
-
-The Campaign timing and messaging should be informed by the months and periods with the highest casual-rider activity.
+**Recommendation:** Introduce weekend-focused membership promotions, discounted annual membership offers, and incentives that encourage frequent casual riders to become annual members.
 
 ### 2. Seasonal Marketing
 
-Use seasonal riding patterns to plan marketing campaigns and membership promotions.
+Both rider categories recorded their highest seasonal trip volume during summer, with August being the busiest month.
 
-Promotional activities should be aligned with periods of increased casual-rider demand.
+** Recommendation** Increase bike availability, maintenance checks, and promotional activities ahead of and during the summer peak to accommodate increased demand and improve customer experience.
 
-### 3. Weekday and Weekend Engagement
+### 3. Develop Targeted Weekend Campaigns
+Saturday recorded the highest trip volume among casual riders.
 
-Use differences in weekday and weekend riding behaviour to develop targeted engagement strategies.
+** Recommendation** Introduce weekend-focused membership promotions, discounted annual membership offers, and incentives that encourage frequent casual riders to become annual members.
+
+### Conclusion
+Cyclistic should adopt a targeted marketing and operational strategy that recognises the different usage patterns of its member and casual riders. By improving member retention, encouraging casual-to-member conversion, and preparing for seasonal demand, the company can strengthen customer engagement and support sustainable business growth.
+
+*Note: The interpretation of casual rides as primarily recreational is a hypothesis based on the observed patterns, not a confirmed finding from the available data.*
