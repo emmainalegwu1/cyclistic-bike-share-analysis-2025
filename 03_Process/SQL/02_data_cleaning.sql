@@ -4,10 +4,8 @@
 -- This inlvolves creating a reusable cleaned dataset for the 2025 Cyclistic analysis.
 
 -- The 12 monthly datasets are combined using UNION ALL.
--- Using SELECT * after veryfying ithe table have identical shema and common columns.
+-- Using SELECT * after veryfying the table have identical schemas and common columns.
 -- Confirm that the monthly schemas are compatible before combining them.
--- Removing records from December 2024 found contained in January 2025.
--- Moving records from subsequent months that belongs to previous months for year 2025.
 
 -- Data-cleaning conditions:
 -- 1. Ride ID must not be NULL.
@@ -16,16 +14,19 @@
 -- 4. Trip duration must be greater than 0 second.
 
 -- Calculate numeric trip duration in seconds and minutes.
--- Transformed the data with the icnlusion of ride length in seconds and minutes, month and month number, day of week and day number.
+-- Transformed the data with the icnlusion of ride length in seconds and minutes, 
+-- month and month number, day of week and day number.
 
--- Removed 53 record of December 2024 from January 2025 data
+-- Identified 53 December 2024 records in the January 2025 source table.
+-- These records are excluded from the 2025 cleaned dataset.
 
 SELECT * FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_01_divvy_tripdata`
 WHERE 
   EXTRACT(YEAR FROM  started_at) = 2024
   AND EXTRACT(MONTH FROM started_at) = 12
 
--- Creating table after moving records from sebsequent month belonging to previous months to their appropriate months.
+-- Combine monthly source tables and allocate trips to the correct
+-- calendar month using started_at.
   
 CREATE TABLE `my-project-52671-510211.Cyclistic_bikeshare.2025_cleaned_trips` AS
  WITH all_trips AS 
