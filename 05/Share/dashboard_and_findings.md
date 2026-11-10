@@ -1,47 +1,46 @@
-# 05 – Share
+# Dashboard and Key Findings
 
-## Data Visualisation
+## Tableau Public Dashboard
 
-The findings from the 2025 Cyclistic bike-share analysis were presented using Tableau Public.
+**Project:** Cyclistic Bike-Share Analysis – 2025
 
-The dashboard is designed to communicate differences in riding behaviour between casual riders and annual members.
+**Dashboard Link:** https://public.tableau.com/views/CyclisticBike-ShareAnalysis2025_17943367132840/CyclisticBike-ShareAnalysis-2025?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-## Dashboard Components
+**Analysis Period:** January – December 2025
 
-The dashboard contains the following visualisations:
+**Visualisation Tool:** Tableau Public
 
-1. Key Performance Indicators (KPIs): Total trips, casual trips and member trips.
+## Key Performance Indicators
 
-2. Monthly Analysis: Monthly trip counts and mean ride duration by rider category.
-
-3. Weekday Analysis: Trip counts and mean ride duration across the days of the week.
-
-4. Seasonal Analysis: Trip counts and mean ride duration across Winter, Spring, Summer and Autumn.
+| Metric | Result |
+|---|---:|
+| Total Trips | 5,551,104 |
+| Member Trips | 3,552,447 |
+| Casual Trips | 1,998,657 |
+| Member Share | 63.99% |
+| Casual Share | 36.01% |
 
 ## Key Findings
 
-The following findings will be documented after validating the final results:
+1. **Monthly Ride Volume:** August recorded the highest trip volume for both members and casual riders.
+2. **Weekday Usage:** Thursday recorded the highest trip volume among members, while Saturday was the busiest day for casual riders.
+3. **Seasonal Usage:** Summer recorded the highest trip volume for both rider categories.
+4. **Average Ride Duration:** Casual riders recorded longer average ride durations than members.
 
-1. Trip Volume: Comparison of annual trip counts between casual riders and members.
+## Dashboard Visualisations
 
-2. Ride Duration: Differences in mean ride duration between the two groups.
+The dashboard includes six visualisations:
 
-3. Monthly Behaviour: Identification of the busiest and quietest months.
+1. Monthly trip volume by rider type.
+2. Weekday trip volume by rider type.
+3. Seasonal trip volume by rider type.
+4. Average ride duration by month.
+5. Average ride duration by weekday.
+6. Average ride duration by season.
 
-4. Weekday Behaviour: Differences in weekday and weekend usage.
-
-5. Seasonal Behaviour: Identification of seasonal riding patterns.
-
-## Dashboard Publication
-
-- Visualisation Tool: Tableau Public
-
-- Dashboard URL: https://public.tableau.com/views/CyclisticBikeshareCasestudyViz/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
-
-- Dashboard Title: Cyclistic Bike-Share
-
-- Publication Date: 10 October, 2026
+An interactive rider-type filter allows users to compare members and casual riders independently or together.
 
 ## Conclusion
 
-The visualisations provides a clear representation of rider behaviour and highlight opportunities for Cyclistic to improve its membership-growth strategy.
+The analysis highlights differences in usage patterns between annual members and casual riders. These insights provide a basis for targeted membership campaigns, customer engagement initiatives and seasonal demand planning.
+
