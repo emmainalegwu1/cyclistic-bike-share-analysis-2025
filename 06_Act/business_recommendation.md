@@ -9,7 +9,7 @@ Using insights from the 2025 Cyclistic bike-share analysis to identify opportuni
 ### 1. Convert Casual Riders into Annual Members
 Casual riders recorded longer average ride durations and higher trip volumes on Saturdays, suggesting a stronger recreational usage pattern.
 
-**Recommendation:** Introduce weekend-focused membership promotions, discounted annual membership offers, and incentives that encourage frequent casual riders to become annual members.
+**Recommendation:** Create a campaign emphasizing on the flexibility and freedom annual members enjoy along with other discounted annual membership offers, and incentives to encourage frequent casual riders to become annual members.
 
 ### 2. Seasonal Marketing
 
