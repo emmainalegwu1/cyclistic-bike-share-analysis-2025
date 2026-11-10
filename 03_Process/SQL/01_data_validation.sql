@@ -1,22 +1,28 @@
 -- 03: PROCESS – DATA VALIDATION
-
+--
 -- Objective:
--- January - December 2025 source data validation
-
--- Objective:
--- Checking monthly row count, for duplicate ride_ids, null fields, non-positive durations, non-eleigible and eligible trips
--- Validate all 12 monthly source tables
+-- Validate all 12 monthly source tables for 2025.
+--
+-- Checks include:
+-- Source row counts, distinct and duplicate ride IDs,
+-- missing essential fields, zero-second durations 
+-- and eligible trips.
+--
+-- Note:
+-- Monthly labels refer to source table names.
+-- Calendar-month allocation is handled in the cleaning query
+-- using the started_at timestamp.
 
 SELECT
   'January' AS month,
   1 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
   COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -30,11 +36,11 @@ SELECT
   2 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
   COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -48,11 +54,11 @@ SELECT
   3 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -66,11 +72,11 @@ SELECT
   4 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -84,11 +90,11 @@ SELECT
   5 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -102,11 +108,11 @@ SELECT
   6 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -120,11 +126,11 @@ SELECT
   7 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
   COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -138,11 +144,11 @@ SELECT
   8 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -156,11 +162,11 @@ SELECT
   9 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -174,11 +180,11 @@ SELECT
   10 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -192,11 +198,11 @@ SELECT
   11 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
@@ -210,11 +216,11 @@ SELECT
   12 AS month_num,
   COUNT(*) AS total_rows,
   COUNT(DISTINCT ride_id) AS distinct_ride_ids,
+  COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_ride_id_rows,
   COUNTIF(ride_id IS NULL) AS null_ride_ids,
   COUNTIF(member_casual IS NULL) AS null_user_types,
   COUNTIF(started_at IS NULL) AS null_start_times,
   COUNTIF(ended_at IS NULL) AS null_end_times,
-  COUNTIF(started_at IS NOT NULL AND ended_at IS NOT NULL AND ended_at <= started_at) AS non_positive_duration_rows,
    COUNTIF(ride_id IS NOT NULL AND member_casual IS NOT NULL
     AND started_at IS NOT NULL AND ended_at IS NOT NULL
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) = 0) AS ineligible_trips,
