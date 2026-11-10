@@ -229,3 +229,4 @@ SELECT
     AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 0) AS eligible_trips
 FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_12_divvy_tripdata`
 ORDER BY month_num;
+
