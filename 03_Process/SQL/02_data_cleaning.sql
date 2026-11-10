@@ -173,3 +173,4 @@ WHERE ride_id IS NOT NULL
   AND started_at IS NOT NULL
   AND ended_at IS NOT NULL
   AND TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 0;
+
