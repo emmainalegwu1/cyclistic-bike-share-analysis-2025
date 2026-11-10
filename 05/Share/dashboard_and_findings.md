@@ -40,7 +40,7 @@ The following findings will be documented after validating the final results:
 
 - Dashboard Title: Cyclistic Bike-Share
 
-- Publication Date: 10 November, 2026
+- Publication Date: 10 October, 2026
 
 ## Conclusion
 
