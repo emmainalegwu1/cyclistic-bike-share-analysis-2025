@@ -58,10 +58,9 @@ Cyclistic wants to understand how annual members and casual riders use its bike-
 
 ## Business Recommendations
 
-- Introduce targeted weekend membership promotions to encourage casual riders to become annual members.
-- Strengthen member engagement through weekday-focused retention initiatives.
+- Campaign that emphasizes on the flexibility, freedom and other benefits to encourage casual ridere conversion to memebrs. 
+- Introduce targeted weekend membership promotions and dicounts to encourage casual riders to become annual members.
 - Increase operational readiness during summer to accommodate higher demand.
-- Develop leisure-focused campaigns to encourage repeat casual rider usage.
 
 ## Repository Structure
 
