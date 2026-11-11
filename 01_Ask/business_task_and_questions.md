@@ -42,4 +42,4 @@ Analyse 2025 bike-share trip data to identify differences in usage patterns betw
 
 ## Expected Outcome
 
-A data-driven analysis and Tableau dashboard that communicate the differences in rider behaviour and provide actionable recommendations to support Cyclistic's membership-growth objective.
+A data-driven analysis and Tableau dashboard that communicate the differences in rider behaviour and provide actionable recommendations to support Cyclistic's membership growth objective.
