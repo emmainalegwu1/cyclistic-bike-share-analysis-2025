@@ -38,7 +38,7 @@ Analyse 2025 bike-share trip data to identify differences in usage patterns betw
 
 - Key measures: Trip count and average ride duration.
 
-- Analysis dimensions: Monthly, weekday and seasonal behaviour.
+- Analysis considerations: Monthly, weekday and seasonal behaviour.
 
 ## Expected Outcome
 
