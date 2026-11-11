@@ -8,7 +8,7 @@ This project uses 12 monthly Divvy bike-share trip-data files covering January t
 
 - Period covered: January–December 2025.
 
-- Number of datasets: 12 monthly datasets.
+- Number of datasets: 12 monthly datasets (2025_01_divvy_tripdata through 2025_12_divvy_tripdata)
 
 - Download source: https://divvy-tripdata.s3.amazonaws.com/index.html
 
@@ -21,8 +21,6 @@ The datasets were imported into Google BigQuery via Google Connected Sheets for 
 - Project ID: my-project-52671-510211
 
 - Dataset: Cyclistic_bikeshare
-
-- Source tables: 2025_01_divvy_tripdata through 2025_12_divvy_tripdata
 
 ## Relevant Data Fields
 
