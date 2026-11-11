@@ -34,10 +34,6 @@ The datasets were imported into Google BigQuery via Google Connected Sheets for 
 | end_station_name | Ending station, where available |
 | member_casual | Rider category: member or casual|
 
-## Data Suitability
-
-The datasets contain trip records, timestamps and rider categories. These fields make it possible to calculate trip duration and compare riding patterns between casual riders and annual members.
-
 ## Data Preparation Considerations
 
 The following checks were considered before analysis:
