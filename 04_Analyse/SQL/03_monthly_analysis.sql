@@ -6,7 +6,7 @@
 
 -- Monthly trip count and mean ride duration by rider type table creation.
 
-CREATE TABLE 
+CREATE OR REPLACE TABLE 
   `my-project-52671-510211.Cyclistic_bikeshare.2025_month_trip_summary` AS
   
 SELECT
