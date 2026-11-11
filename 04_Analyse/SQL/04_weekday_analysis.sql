@@ -5,7 +5,7 @@
 -- Compare trip counts and average ride duration
 -- by rider category and day of the week.
 
-CREATE TABLE 
+CREATE OR REPLACE TABLE 
   `my-project-52671-510211.Cyclistic_bikeshare.2025_weekday_trip_summary` AS
   
 SELECT
