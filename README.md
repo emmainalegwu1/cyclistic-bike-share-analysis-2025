@@ -54,7 +54,10 @@ Cyclistic wants to understand how annual members and casual riders use its bike-
 
 ## Interactive Dashboard
 
-**Tableau Public:** [View Cyclistic 2025 Dashboard](https://public.tableau.com/views/CyclisticBike-ShareAnalysis2025_17943367132840/CyclisticBike-ShareAnalysis-2025?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+**Tableau Public:** 
+![Cyclistic Bike-Share Analysis 2025 Dashboard](images/cyclistic_dashboard_2025.png)
+
+[View the interactive Tableau dashboard](https://public.tableau.com/views/CyclisticBike-ShareAnalysis2025_17943367132840/CyclisticBike-ShareAnalysis-2025)
 
 ## Business Recommendations
 
