@@ -28,7 +28,7 @@ WHERE
 -- Combine monthly source tables and allocate trips to the correct
 -- calendar month using started_at.
   
-CREATE TABLE `my-project-52671-510211.Cyclistic_bikeshare.2025_cleaned_trips` AS
+CREATE OR REPLACE TABLE `my-project-52671-510211.Cyclistic_bikeshare.2025_cleaned_trips` AS
  WITH all_trips AS 
 (
 SELECT * FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_01_divvy_tripdata`
