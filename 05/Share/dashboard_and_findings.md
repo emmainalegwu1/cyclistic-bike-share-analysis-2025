@@ -38,7 +38,7 @@ The dashboard includes six visualisations:
 5. Average ride duration by weekday.
 6. Average ride duration by season.
 
-An interactive rider-type filter allows users to compare members and casual riders independently or together.
+Along with an interactive rider-type filter that allows users to compare members and casual riders independently or together.
 
 ## Conclusion
 
