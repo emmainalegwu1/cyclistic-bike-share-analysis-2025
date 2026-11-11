@@ -2,7 +2,7 @@
 
 ## Data Source
 
-This project uses 12 monthly Divvy bike-share trip-data files covering January to December 2025.
+This project uses 12 monthly Divvy bike-share trip-data files covering January to December 2025 citing the original data source and license.
 
 - Data source: Divvy trip data.
 
@@ -54,7 +54,17 @@ Examine invalid timestamps and trip durations.
 
 Ensure the datasets can be combined for annual analysis.
 
+## Data Credibility
+
+The collected data was inclusive of all rider and rideable types of bikes. The data obtained was collected in 2025,  making the data quite current.
+
+## Privacy
+
+The data excludes riders personal identifiable information and other sensitive data to safeguard the privacy of users. 
+
 ## Data Limitations
+
+I was unable to access users' geographic location to determine if they live within the Cyclistic service area.
 
 The datasets describe recorded bike-share usage but do not explain individual customer motivations.
 
