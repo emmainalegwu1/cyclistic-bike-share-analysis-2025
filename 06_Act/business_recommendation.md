@@ -18,7 +18,7 @@ Both rider categories recorded their highest seasonal trip volume during summer,
 **Recommendation:** Increase bike availability, maintenance checks, and promotional activities ahead of and during the summer peak to accommodate increased demand and improve customer experience.
 
 ### 3. Develop Targeted Weekend Campaigns
-Saturday recorded the highest trip volume among casual riders.
+The weekends recorded the highest trip volume among casual riders.
 
 **Recommendation:** Introduce weekend-focused membership promotions, discounted annual membership offers, and incentives that encourage frequent casual riders to become annual members.
 
