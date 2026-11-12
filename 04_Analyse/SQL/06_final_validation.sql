@@ -4,6 +4,7 @@
 -- Confirm that the cleaned dataset reconciles across rider categories.
 
 -- 1. Total valid trips by rider category
+
 WITH monthly AS (
   SELECT SUM(trip_count) AS total 
   FROM `my-project-52671-510211.Cyclistic_bikeshare.2025_month_trip_summary`
